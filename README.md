@@ -6,7 +6,7 @@ iTunesで同期した音楽のタイトルを復元し、フォルダに抽出�
 まず、iTunesフォルダに"i"というフォルダを作って下さい。
 
 1:"i"フォルダにifuseでiPhoneをマウントし、"./iTunes i/"　で実行する。
-2:プログラム(iTune)と同じフォルダに、"iTunes_Control"フォルダを配置し、"./iTunes" で実行する。
+2:プログラム(iTunes)と同じフォルダに、"iTunes_Control"フォルダを配置し、"./iTunes" で実行する。
 
 1:
 まず、 "sudo apt install ifuse" で、ifuseをインストールします。
