@@ -3,16 +3,17 @@
 iTunesの作る、iPhone側のDBを復元するものです。
 iTunesで同期した音楽のタイトルを復元し、フォルダに抽出します。
 復元方法は２つあります。
-"i"フォルダにifuseでiPhoneをマウント(@1)し、"./iTunes i/"　で実行する。
-もしくは、
-プログラム(iTune)と同じフォルダに、"iTunes_Control"フォルダを配置し(@2)、"./iTunes" で実行する。
+まず、iTunesフォルダに"i"というフォルダを作って下さい。
 
-@1
+1:"i"フォルダにifuseでiPhoneをマウントし、"./iTunes i/"　で実行する。
+2:プログラム(iTune)と同じフォルダに、"iTunes_Control"フォルダを配置し、"./iTunes" で実行する。
+
+1:
 まず、 "sudo apt install ifuse" で、ifuseをインストールします。
 次に、iPhoneを接続し、プログラム(iTunes)のあるフォルダで "ifuse i/" とし、iPhoneをマウントします。
 そして、そのフォルダで "./iTunes i/" を実行します。
 
-@2
+2:
 まず、iPhoneを接続し、ファイルマネージャーなどのリンク欄に　afc://iPhoneのUUID と打ちます。
 もしくは、〇〇のiPhone など、自分のiPhoneがあると思うので、それを選択し、リンク欄の":3/"を削除してEnterを押します。
 そこに、"iTunes_Control"フォルダがあるので、それをiTunesと同じフォルダにコピーします。
